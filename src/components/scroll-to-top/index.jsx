@@ -14,10 +14,22 @@ export default function ScrollToTop() {
   function handleToBottom() {
     return ref.current.scrollIntoView({ behavior: "smooth" });
   }
-  console.log(data.products && data.products.length);
+  if (isLoading) {
+    return (
+      <div>
+        <h1>Loading</h1>
+      </div>
+    );
+  }
+
+  if(error){
+return (<div>
+    <h1>{error}</h1>
+  </div>)
+  }
   return (
     <div className="main-me">
-      <button onClick={handleToBottom}>Scroll to Bottom</button>
+      <button style={{color: "black", marginBottom: "10px"}} onClick={handleToBottom}>Scroll to Bottom</button>
       {data && data.products && data.products.length > 0
         ? data.products.map((product) => {
             return (
@@ -29,7 +41,9 @@ export default function ScrollToTop() {
             );
           })
         : null}
-      <button style={{color: "black"}} onClick={handleToTop}>Scroll to top</button>
+      <button style={{ color: "black", margin: "10px" }} onClick={handleToTop}>
+        Scroll to top
+      </button>
       <div ref={ref}></div>
     </div>
   );

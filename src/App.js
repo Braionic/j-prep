@@ -20,6 +20,7 @@ import Context from "./components/feature-flag/FeatureContext.jsx";
 import FeatureContext from "./components/feature-flag/FeatureContext.jsx";
 import CustomHooks from "./components/customHooks/index.jsx";
 import ScrollToTop from "./components/scroll-to-top/index.jsx";
+import ScrollToPoint from "./components/move-to-a-point/index.jsx";
 
 function App() {
   return (
@@ -48,7 +49,8 @@ function App() {
       </FeatureContext>
   */}
   {/*<CustomHooks />*/}
-  <ScrollToTop />
+  {/*<ScrollToTop />*/}
+  <ScrollToPoint />
     </>
   );
 }
