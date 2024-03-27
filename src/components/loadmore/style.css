@@ -1,0 +1,29 @@
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+}
+
+.product-container {
+border: 1px solid gray;
+padding: 10px;
+display: flex;
+flex-direction: column;
+gap: 5px;
+align-items: center;
+justify-content: center;
+}
+
+h4{
+    max-width:200px;
+    word-wrap:break-word;
+}

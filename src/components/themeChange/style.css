@@ -1,0 +1,40 @@
+:root {
+    --background-color: #000;
+    --text-color: #fff;
+    --btn-bg: #000;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+[data-theme = "dark"] {
+    --background-color: #000;
+    --text-color: #fff;
+    --btn-bg: #fff;
+    --btn-txt: #000;
+}
+
+[data-theme = "light"] {
+    --background-color: #fff;
+    --text-color: #000;
+    --btn-bg: #000;
+    --btn-txt: #fff;
+}
+
+
+.main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+.button {
+    background-color: var(--btn-bg);
+    color: var(--btn-txt);
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+

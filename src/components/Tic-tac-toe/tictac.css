@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.each-boxes {
+    width: 100px;
+    height: 100px;
+    color: black;
+    background-color: bisque;
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-tiktic-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+   
+}
