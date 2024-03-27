@@ -6,7 +6,7 @@ export default function CustomHooks() {
   const windowResize = useWindowResize()
   const {width, heigth} = windowResize
   const [data, error, isLoading] = useFetch(
-    "https://dummyjson.com/products?limit=20&skip=20"
+    "https://dummyjson.com/products?limit=100&skip=20"
   );
   console.log(data instanceof Array);
   console.log(isLoading);
